@@ -15,11 +15,10 @@ public class HighLow {
 		while(secret != guess) {
 			if (guess < secret) {
 				System.out.print("Sorry, your guess is too low. Try again. \n> ");
-				guess = keyboard.nextInt();
 			} else {
 				System.out.print("Sorry, your guess is too high. Try again. \n> ");
-				guess = keyboard.nextInt();
 			}
+			guess = keyboard.nextInt();
 		}
 		System.out.println("You guessed it! What are the odds?!");
 	}
